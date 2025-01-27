@@ -1,16 +1,59 @@
 
+<style>
+
+.vertical-container {
+    display: flex;  
+    flex-direction: column;
+    gap: 60px;  
+}
+
+.image-container img {
+    width: 560px;
+    height: auto;
+    border-radius: 15px;
+}
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .container2 {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .score-amount {
+    margin: 20 inherit
+  }
+
+  .image-container {
+
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+</style>
 
 # What is RoulleteVision?
-### RouletteVision borns with the goal of using Computer Vision and AI to guess the number in which the ball will land in a roulette game, given the first movements of the ball
+### RouletteVision borns with the goal of using Computer Vision and Neural Networks to guess the number in which the ball will land in a roulette game, given the first movements of the ball
 
 (this algorithm has only research purposes only and does not promote gambling)
 
 ## Resume
-The project is divided in 2 main parts. The analysis alrogithm that extracts data from the video, which I'm sharing in this repo, and the Neural Network that uses the data to guess the result, which I haven't been able to make it work due to seome issues.
+The idea is to extract data from a huge amount of roulette games and use this data to train a neural net, so that the final result is a model where you give the first part of the roulette video and you get an approximation of where the ball will fall. More information about what is considered the first (input) and second (output) of the roulette game is given in the Dataset section and in the, [HuggingFace Dataset](https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset).
+
+The project is divided in 2 main parts. The analysis alrogithm that extracts data from the video, which I'm sharing in this repo, and the Neural Network that uses the data to guess the result, which I haven't been able to make it work due to some issues that I discuss here.
 
 ## Dataset
 
-The dataset used is published on HuggingFace and is composed of 1703 pairs of videos of roulette games, the first video of the pair, which I called the input, contains the part of the roulette game where the ball is still spining around the wheel. The second video, the output, contains the last seconds of the game, where the ball stops spining around and falls into the inner part of the wheel, making some rebounds and finally falling in a number.
+The dataset is published on HuggingFace and is composed of 1703 pairs of videos of roulette games, the first video of the pair, which I called the input, contains the part of the roulette game where the ball is still spining around the wheel. The second video, the output, contains the last seconds of the game, where the ball stops spining around and falls into the inner part of the wheel, making some rebounds and finally falling in a number.
+More information about the dataset and video examples in the [Dataset web](https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset).
+
 The code is already adapted so that accesses the videos from the dataset automatically, without having to download the videos locally
 
 ## Analysis algorithms
@@ -24,3 +67,31 @@ Appart from tracking a number from the wheel to register the movement of it seco
 
 ### AN2_vid_2
 It also registers the movement of the wheel and gets the position of the ball. The position is transformed into a value between 0 and 1000, this value is the position of the 0 number with respect to the right side of the roulette, being 0 when it is at 0 grades and 500 when it is at 180 grades (in the left part).
+
+
+<html lang="en">
+  <div class="container2">
+      <div class="text-center">
+      </div>
+    <div class="image-container">
+      <div>
+        <h3 class="Input">EXAMPLE 1: INPUT VIDEO ANALYSIS </h3>
+        <img src="https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset/resolve/main/Examples/ONL-EX1.gif" width=500>
+      </div>
+    </div>
+  </div>
+</html>
+
+<html lang="en">
+  <div class="container2">
+      <div class="text-center">
+      </div>
+    <div class="image-container">
+      <div>
+        <h3 class="Output">EXAMPLE 2: OUTPUT VIDEO ANALYSIS</h3>
+        <img src="https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset/resolve/main/Examples/ONL-EX2.gif" width=500>
+      </div>
+    </div>
+  </div>
+</html>
+
