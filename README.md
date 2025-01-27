@@ -1,44 +1,3 @@
-
-<style>
-
-.vertical-container {
-    display: flex;  
-    flex-direction: column;
-    gap: 60px;  
-}
-
-.image-container img {
-    width: 560px;
-    height: auto;
-    border-radius: 15px;
-}
-
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .container2 {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  .text-center {
-    text-align: center;
-  }
-
-  .score-amount {
-    margin: 20 inherit
-  }
-
-  .image-container {
-
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  
-</style>
-
 # What is RoulleteVision?
 ### RouletteVision borns with the goal of using Computer Vision and Neural Networks to guess the number in which the ball will land in a roulette game, given the first movements of the ball
 
@@ -68,30 +27,19 @@ Appart from tracking a number from the wheel to register the movement of it seco
 ### AN2_vid_2
 It also registers the movement of the wheel and gets the position of the ball. The position is transformed into a value between 0 and 1000, this value is the position of the 0 number with respect to the right side of the roulette, being 0 when it is at 0 grades and 500 when it is at 180 grades (in the left part).
 
-
 <html lang="en">
-  <div class="container2">
+  <div class="container">
       <div class="text-center">
       </div>
     <div class="image-container">
       <div>
-        <h3 class="Input">EXAMPLE 1: INPUT VIDEO ANALYSIS </h3>
-        <img src="https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset/resolve/main/Examples/ONL-EX1.gif" width=500>
+        <h3 class="Input">INPUT: CIRCULAR MOVEMENT OF THE BALL</h3>
+        <img src="https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset/resolve/main/Examples/ONL-INPUT.gif" width=200>
       </div>
-    </div>
-  </div>
-</html>
-
-<html lang="en">
-  <div class="container2">
-      <div class="text-center">
-      </div>
-    <div class="image-container">
       <div>
-        <h3 class="Output">EXAMPLE 2: OUTPUT VIDEO ANALYSIS</h3>
-        <img src="https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset/resolve/main/Examples/ONL-EX2.gif" width=500>
+        <h3 class="Output">OUTPUT: JUST BEFORE FALLING IN A NUMBER</h3>
+        <img src="https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset/resolve/main/Examples/ONL-OUTPUT.gif" width=200>
       </div>
     </div>
   </div>
 </html>
-
