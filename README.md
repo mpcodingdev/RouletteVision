@@ -27,17 +27,18 @@ Appart from tracking a number from the wheel to register the movement of it seco
 ### AN2_vid_2
 It also registers the movement of the wheel and gets the position of the ball. The position is transformed into a value between 0 and 1000, this value is the position of the 0 number with respect to the right side of the roulette, being 0 when it is at 0 grades and 500 when it is at 180 grades (in the left part).
 
+## INPUT EXAMPLE: MORE EXAMPLES IN THE HUGGINGFACE DATASET
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insert GIF from Web</TITLE>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="gif-container">
-        <img src="https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset/resolve/main/Examples/ONL-OUTPUT.gif" alt="Funny cat GIF">
+        <img src="https://github.com/mpcodingdev/RouletteVision/blob/main/Ex_videos/ONL-EX1.gif?raw=true" alt="--">
     </div>
 </body>
 </html>
+
