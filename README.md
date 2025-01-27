@@ -42,9 +42,9 @@ It also registers the movement of the wheel and gets the position of the ball. T
 </body>
 </html>
 
-# RouletteVision Dataset: [Available here]([https://github.com/mpcodingdev/RouletteVision](https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset)) 💠
+# RouletteVision Dataset: [Available here](https://huggingface.co/datasets/mp-coder/RouletteVision-Dataset) 💠
 
-## X:  [( @mp_coder )](https://x.com/mp_coder) 👈🏼
+## X:  ( @mp_coder ) -> https://x.com/mp_coder 👈🏼
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tip for CV Project Development:<br><br>💠Always approach a problem from different perspectives<br><br>I have spent a lot of time trying to improve an algorithm for video analysis through redefining it. <br>Even if it did improved, another factor has made it much more precise📹 </p>&mdash; Mister P coder - mainly CV🚀 (@mp_coder) <a href="https://twitter.com/mp_coder/status/1869730297576833238?ref_src=twsrc%5Etfw">December 19, 2024</a></blockquote> 
 
